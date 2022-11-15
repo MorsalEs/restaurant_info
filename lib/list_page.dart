@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:restaurant/constants.dart';
 import 'package:restaurant/restaurant_bank.dart';
 
+import 'detail_page.dart';
+
 
 class ListPage extends StatefulWidget {
   const ListPage({super.key});
@@ -25,7 +27,14 @@ class _ListPageState extends State<ListPage> {
         itemBuilder: (BuildContext context, int index) {
           return TextButton(
             onPressed: () {
-              print("to detail page");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailPage(
+                    restaurant: restaurantBank.restaurantList[index],
+                  ),
+                ),
+              );
             },
             child: Container(
               margin: const EdgeInsets.only(top: 8),
