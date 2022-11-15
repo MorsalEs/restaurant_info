@@ -1,0 +1,8 @@
+const kBackColor = [
+  0xFFE4F1FC,
+  0xFFE3F6FA,
+  0xFFF9EAE7,
+  0xFFFEF1E1,
+  0xFFEFE7F4,
+  0xFFFCECED,
+];
